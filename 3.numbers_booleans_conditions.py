@@ -118,5 +118,31 @@ side_3 = 0.33333
 print(1.5*(side_3**2)*height_3*(3**(0.5)))
 
 # Задание 3. Таблицы истинности
-
-
+# not
+print('','a', '\t', '\t', 'not a', '\n', True,'\t', not True, '\n', False,'\t', not False)
+# or
+print('','a', '\t', '\t', 'b', '\t','\t', 'a or b', '\n', True,'\t', False,'\t', (True or False),'\n', False,'\t', True, '\t',(False or True),'\n', True, '\t', True, '\t', (True or True),'\n', False, '\t', False, '\t', (False or False))
+# xor
+print('','a', '\t', '\t', 'b', '\t', '\t', 'a xor b')
+print(True, '\t', False, '\t', ((True and not False) or (not True and False)))
+print(False, '\t', True, '\t', ((False and not True) or (not False and True)))
+print(True, '\t', True, '\t', ((True and not True) or (not True and True)))
+print(False, '\t', False, '\t', ((False and not False) or (not False and False)))
+# nor
+print('','a', '\t', '\t', 'b', '\t', '\t', 'a nor b')
+print(True, '\t', False, '\t', not(True or False))
+print(False, '\t', True, '\t', not(False or True))
+print(True, '\t', True, '\t', not(True or True))
+print(False, '\t', False, '\t', not(False or False))
+# and
+print('','a', '\t', '\t', 'b', '\t', '\t', 'a and b')
+print(True, '\t', False, '\t', True and False)
+print(False, '\t', True, '\t', False and True)
+print(True, '\t', True, '\t', True and True)
+print(False, '\t', False, '\t', False and False)
+# nand
+print('','a', '\t', '\t', 'b', '\t', '\t', 'a nand b')
+print(True, '\t', False, '\t', not(True and False))
+print(False, '\t', True, '\t', not(False and True))
+print(True, '\t', True, '\t', not(True and True))
+print(False, '\t', False, '\t', not(False and False))
