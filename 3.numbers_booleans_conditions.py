@@ -61,10 +61,10 @@ print(int(c))
 print(float(c))
 
 # Задание 2. 3 формулы по 3 примера
-H = float(input())
-R = float(input())
+H = float(input('Введите высоту цилиндра:'))
+R = float(input('Введите радиус цилиндра:'))
 square_of_cylinder = 2*3.14*R*H + 2*3.14*(R**2)
-print(square_of_cylinder)
+print('Площадь цилиндра:', int(square_of_cylinder))
 
 H_1 = 10
 R_1 = 100
@@ -78,11 +78,11 @@ H_3 = 3
 R_3 = 5
 print(2*3.14*R_3*H_3 + 2*3.14*(R_3**2))
 
-X_0 = float(input())
-V = float(input())
-t = float(input())
+X_0 = float(input('Введите начальную координату:'))
+V = float(input('Введите скорость:'))
+t = float(input('Введите время:'))
 X = X_0 + V*t
-print (X)
+print('Конечная координата:', int(X))
 
 X_0 = 4.0
 V = 5.5
@@ -99,10 +99,10 @@ V = 0.0
 t = 10000000.0
 print(X_0 + V*t)
 
-height = float(input())
-side = float(input())
+height = float(input('Введите высоту правильной шестиугольной призмы:'))
+side = float(input('Введите сторону правильной шестиугольной призмы:'))
 vol_of_regular_hexagonal_prism = 1.5*(side**2)*height*(3**(0.5))
-print(int(vol_of_regular_hexagonal_prism))
+print('Объем правильной шестиугольной призмы:', int(vol_of_regular_hexagonal_prism))
 
 height_1 = 1.0
 side_1 = 1.0
@@ -146,3 +146,14 @@ print(True, '\t', False, '\t', not(True and False))
 print(False, '\t', True, '\t', not(False and True))
 print(True, '\t', True, '\t', not(True and True))
 print(False, '\t', False, '\t', not(False and False))
+
+# Задание 4. Fizz buzz
+a = int(input('Введите целое число:'))
+    if (a % 3 == 0) and (a % 5 == 0):
+        print('fizzbuzz')
+    elif a % 3 == 0:
+        print('fizz')
+    elif a % 5 == 0:
+        print('buzz')
+    else:
+        print(a)
