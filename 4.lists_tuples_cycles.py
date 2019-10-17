@@ -38,7 +38,7 @@ n = 0
 for number in list1:
     a = [list1[n] + list2[n]]
     list3.extend(a)
-    n+=1
+    n += 1
 list3
 # Задание 5. Определяем тип треугольника.
 a = float(input())
@@ -58,3 +58,12 @@ print(elements[::-1])
 elements_copy = [1, 2, ('fruit', 5)]
 elements_copy.reverse()
 print(elements_copy)
+# Задание 7. Считаем сумму четных чисел кортежа
+interesting_numbers = (3, 2, 5, 7, 14, 26, 32, 31, 37)
+sum = 0
+    for element in interesting_numbers:
+        if element % 2 == 0:
+            sum += element
+        else:
+            continue
+print(sum)
