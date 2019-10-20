@@ -28,7 +28,7 @@ len(my_training_tuple)
 # Задание 3. Поприветствуем друзей.
 friends = ['Anna', 'Julia', 'Taisia', 'Kate', 'Maria', 'Marina']
 for name in friends:
-    print('Hi' + ',', name)
+    print('Hi,', name)
 print('Hi, everyone!')
 # Задание 4. Складываем коллекции.
 list1 = [1, 2, 3, 4, 5]
@@ -37,19 +37,22 @@ list3 = []
 n = 0
 for number in list1:
     a = [list1[n] + list2[n]]
-    list3.extend(a)
+    list3.append(a)
     n += 1
 list3
 # Задание 5. Определяем тип треугольника.
 a = float(input())
 b = float(input())
 c = float(input())
+if a + b != c and a + c != b and b + c != a:
     if a == b == c:
-        print('Треугольник равносторонний!')
+       print('Треугольник равносторонний!')
     elif a == b or a == c or b == c:
         print('Треугольник равнобедренный!')
     else:
         print('Треугольник разносторонний!')
+else:
+    print('Такого треугольника не существует!')
 # Задание 6. Разворачиваем лист.
 # Способ 1
 elements = [1, 2, ('fruit', 5)]
@@ -60,10 +63,8 @@ elements_copy.reverse()
 print(elements_copy)
 # Задание 7. Считаем сумму четных чисел кортежа
 interesting_numbers = (3, 2, 5, 7, 14, 26, 32, 31, 37)
-sum = 0
+s = 0
     for element in interesting_numbers:
         if element % 2 == 0:
-            sum += element
-        else:
-            continue
+            s += element
 print(sum)

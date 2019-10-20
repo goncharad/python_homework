@@ -149,11 +149,11 @@ print(False, '\t', False, '\t', not(False and False))
 
 # Задание 4. Fizz buzz
 a = int(input('Введите целое число:'))
-    if (a % 15 == 0):
-        print('fizzbuzz')
-    elif a % 3 == 0:
-        print('fizz')
-    elif a % 5 == 0:
-        print('buzz')
-    else:
-        print(a)
+if a % 15 == 0:
+    print('fizzbuzz')
+elif a % 3 == 0:
+    print('fizz')
+elif a % 5 == 0:
+    print('buzz')
+else:
+    print(a)
