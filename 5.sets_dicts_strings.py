@@ -12,23 +12,23 @@ my_set >= my_set_2
 my_set <= my_set_2
 
 # Задание 2. Словарик
-dict = {}
-dict['Literature'] = 4
-dict['Biology'] = 5
-dict['Geography'] = 3
-dict['English'] = 4
-dict['Physics'] = 2
-dict['Math'] = 5
-dict.pop('Biology')
-dict['Literature']
-for i in dict:
-    print(dict[i])
-for i in dict:
+dicti = {}
+dicti['Literature'] = 4
+dicti['Biology'] = 5
+dicti['Geography'] = 3
+dicti['English'] = 4
+dicti['Physics'] = 2
+dicti['Math'] = 5
+dicti.pop('Biology')
+dicti['Literature']
+for i in dicti:
+    print(dicti[i])
+for i in dicti:
     n = i + 'ing'
     print(n)
-for i in dict:
-    print(i, dict[i])
-for key, value in dict.items():
+for i in dicti:
+    print(i, dicti[i])
+for key, value in dicti.items():
     print(key, value)
 # Задание 3. Программа про строку
 stroka = input('Введитe строку:')
@@ -48,7 +48,7 @@ print('Так выглядит строка где каждое слово на�
 # Задание 4. Конвертация
 # Из строки
 my_str = 'abc'
-my_list = [my_str]
+my_list = list(my_str)
 my_set = {my_str}
 my_tuple = (my_str,)
 # Из списка

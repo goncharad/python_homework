@@ -44,7 +44,7 @@ list3
 a = float(input())
 b = float(input())
 c = float(input())
-if a + b != c and a + c != b and b + c != a:
+if a + b > c and a + c > b and b + c > a:
     if a == b == c:
        print('Треугольник равносторонний!')
     elif a == b or a == c or b == c:
@@ -64,7 +64,7 @@ print(elements_copy)
 # Задание 7. Считаем сумму четных чисел кортежа
 interesting_numbers = (3, 2, 5, 7, 14, 26, 32, 31, 37)
 s = 0
-    for element in interesting_numbers:
-        if element % 2 == 0:
-            s += element
+for element in interesting_numbers:
+    if element % 2 == 0:
+        s += element
 print(sum)
